@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SafeStep</string>
+    <string name="login">Login</string>
+    <string name="help_me">Help Me! 🚨</string>
+    <string name="im_safe">I’m Safe ✅</string>
+    <string name="contacts">Emergency Contacts</string>
+</resources>

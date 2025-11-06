@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.SafeStep" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary colors -->
+        <item name="android:statusBarColor">@color/ss_primary</item>
+        <item name="colorPrimary">@color/ss_primary</item>
+        <item name="colorOnPrimary">@color/ss_onPrimary</item>
+        <item name="colorSecondary">@color/ss_secondary</item>
+
+        <!-- Backgrounds -->
+        <item name="android:windowBackground">@color/ss_surface</item>
+
+        <!-- Rounded component corners -->
+        <item name="shapeAppearanceSmallComponent">@style/Shape.Rounded.M</item>
+        <item name="shapeAppearanceMediumComponent">@style/Shape.Rounded.L</item>
+        <item name="shapeAppearanceLargeComponent">@style/Shape.Rounded.L</item>
+
+        <!-- Default widget styles -->
+        <item name="materialButtonStyle">@style/Widget.SafeStep.Button</item>
+        <item name="textInputStyle">@style/Widget.SafeStep.TextInput</item>
+    </style>
+
+    <!-- Rounded corners -->
+    <style name="Shape.Rounded.M" parent="">
+        <item name="cornerSize">12dp</item>
+    </style>
+    <style name="Shape.Rounded.L" parent="">
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <!-- Custom widget styles -->
+    <style name="Widget.SafeStep.Button" parent="Widget.Material3.Button">
+        <item name="android:insetTop">12dp</item>
+        <item name="android:insetBottom">12dp</item>
+    </style>
+
+    <style name="Widget.SafeStep.TextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/ss_outline</item>
+        <item name="boxBackgroundColor">@color/ss_background</item>
+    </style>
+
+</resources>
+
