@@ -11,6 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SafeStep">
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".SecurityActivity" />
+        <activity android:name=".CheckInActivity"/>
+        <activity android:name=".PasswordActivity"/>
+        <activity android:name=".DeleteAccountActivity"/>
+
+
         <activity
             android:name=".ContactsActivity"
             android:exported="false" />
