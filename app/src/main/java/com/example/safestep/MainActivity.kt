@@ -18,6 +18,11 @@ class MainActivity : AppCompatActivity() {
         b = ActivityMainBinding.inflate(layoutInflater)
         setContentView(b.root)
 
+       //profile button
+        b.btnProfile.setOnClickListener {
+            startActivity(Intent(this, ProfileActivity::class.java))
+        }
+
         // “I’m Safe”
         b.btnSafe.setOnClickListener {
             Toast.makeText(this, "Glad you’re safe!", Toast.LENGTH_SHORT).show()
