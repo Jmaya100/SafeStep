@@ -18,6 +18,10 @@ class LoginActivity : AppCompatActivity() {
         b = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(b.root)
 
+                //create account button
+                b.tvRegister.setOnClickListener {
+                startActivity(Intent(this, RegisterActivity::class.java))
+            }
         b.btnLogin.setOnClickListener {
             val email = b.etEmail.text?.toString()?.trim().orEmpty()
             val pass  = b.etPassword.text?.toString()?.trim().orEmpty()
